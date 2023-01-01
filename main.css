@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.text-white{
+    color: #fff !important;
+}
+
+.text-gray{
+    color: #757575 !important;
+}
+
+.skeleton{
+    width: 100%;
+    height: 690px;
+    background-image: url(theband.jpg);
+
+}
+
+
+.skeleton h1{
+    text-align: center;
+    padding-top: 45%;
+    color: white;
+    font-family: monospace;
+    font-weight: 300;
+}
+
+.skeleton h2{
+    text-align: center;
+    color: white;
+    font-size: unset;
+    font-family: -webkit-body;
+    padding-top: 1%;
+}
+
+.clear{
+    clear: both;
+}
+
+.box{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    position: fixed;
+}
+
+.box .symbol_search{
+    color: white;
+    background: black;
+    width: 8%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 63%;
+}
+
+.box .fa{
+    color: white;
+    margin-left: -18px;
+}
+
+.box .symbol_search:hover{
+    background-color: #f44336;
+}
+
+
+.btnbackground{
+    color: white;
+    padding: 20px;
+    font-size: larger;
+    text-decoration: unset;
+}
+
+.btnbackground:hover{
+    color: black;
+    background-color: grey;
+}
+
+.welovemusic{
+    width: 100%;    
+    
+}
+
+.Introduce{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    letter-spacing: 2px;
+    font-style:initial
+    
+}
+
+.Introduce2{
+    font-size: medium;
+    text-align: center;
+    padding-bottom: 2%;
+    font-style: italic ;
+    color: grey;
+    
+}
+
+.Introduce3{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 60px;
+    line-height: 1.5;
+}
+
+.band-member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picturem img{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+}
+
+.name{
+    padding-bottom: 20px;
+    padding-left: 40% ;
+}
+
+.name p{
+    font-size: larger;
+}
+
+.tour-section{
+    background-color: #000;
+    
+}
+
+
+.content h2{
+    text-align: center; 
+}
+
+
+.content h2{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5.5px;
+    padding-top: 12%;
+    padding-bottom: 3%;
+}
+
+.content #title-tour{
+    text-align: center; 
+}
+
+.content p{
+    font-weight: bold;
+    font-size:large;
+}
+
+.ticket-list{
+    background-color: white;
+    margin-top: 40px;
+    width: 794px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    
+}
+
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px ;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    font-size: 17px;
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.ticket-list .quant{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    margin-top: -2px;
+}
+
+.place-list{
+    margin-top: 32px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.place-item{
+    float: left;
+    width: 33.3333333%;
+    padding: 0px 8px;
+}
+
+.place-item .pic1{
+    width: 100%;
+    display: block;
+
+}
+
+.place-item p{
+    font-weight: unset;
+}
+
+.place-content h3{
+    font-size: large;
+}
+
+#NY{
+    margin-left: -8px;
+}
+
+#TX{
+    margin-left: 8px;
+}
+
+.place-item .pic1:hover{
+    opacity: 0.6;
+}
+
+.place-content{
+    background-color: #ffff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 8%;
+    color: #757575;
+}
+
+.place-desc{
+    margin-top: 8%;
+    line-height: 1.6;
+    padding-bottom: 15%;
+}
+
+.place-buy{
+    padding: 11px 13px ;
+    background: #000;
+    color: white;
+    text-decoration: unset;
+}
+
+.place-buy:hover{
+    background: #757575;
+    color: black;
+}
+
+.tour-section{
+    padding-bottom: 8%;
+}
+
+.background_contact{
+    width: 100vw;
+    height: 460px;
+}
+
+.background_contact h2{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.background_contact h3{
+    text-align: center;
+    margin-top: 35px;
+    font-weight: normal;
+    font-style: italic;
+    color: #757575;
+    padding-bottom: 55px;
+}
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_info .client_info{
+    padding-left: 148px;
+
+}
+
+.contact i{
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+}
+
+#sim1{
+    padding-right: 19px;
+}
+
+.client_res{
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.client_res input{
+    height: 40px;
+    width: 183px;
+    padding-left: 8px;
+}
+
+.client_info .client_mess{
+    width: 383px;
+    height: 40px;
+    padding-left: 8px;
+}
+
+.client_res .text1{
+    padding-right: 16px;
+}
+
+.background_contact button{
+    margin-top: 16px;
+    margin-left: 940px;
+    width: 71px;
+    height: 38px;
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.background_contact button:hover{
+    background-color: grey;
+    color: #000;
+}
+
+footer{
+    height: 215px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+footer i{
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
+footer p{
+    font-size: large;
+    color: #757575;
+}
+
+footer a{
+    font-size: large;
+    color: #757575;
+}
