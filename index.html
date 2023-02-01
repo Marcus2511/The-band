@@ -1,169 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The band</title>
-    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="box">
-            <a href="#home" class="btnbackground">Home</a>
-            <a href="#about" class="btnbackground">About</a>
-            <a href="#tour" class="btnbackground">Tour</a>
-            <a href="#contact" class="btnbackground">Contact</a>
-            <a href="#" class="btnbackground">More</a>
-            <i class="fa fa-caret-down"></i>
-            <div class="symbol_search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="overlays hide">
+        <div class="modal">
+          <h1 class="modal-header">
+            <i class="fa-solid fa-suitcase"></i>Ticket
+            <i class="fa-sharp fa-solid fa-x" class="out"></i>
+          </h1>
+          <div class="modal-body">
+            <div class="sold-ticket">
+              <p>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>Tickets,
+                $15per person
+              </p>
+              <input type="text" placeholder="How many?" />
+              <p><i class="fa-solid fa-user"></i>Send to</p>
+              <input type="text" placeholder="Enter email" />
+              <button>Pay</button>
             </div>
-        </div>
-        <div 
-            class="skeleton" id="home">
-            <h1>Los Angeles</h1>
-            <h2 class="text1">We had the best time playing at Venice beach</h2>
-        </div>
-        <div class="container-content">
-            <div class="welovemusic" id="about">
-                <h1 class="Introduce">THE BAND</h1>
-                <h2 class="Introduce2">We love music</h2>
-                <p  class="Introduce3">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="band-member">
-                    <!--Name 1-->
-                    <div class="membername">
-                        <div class="name">
-                            <p>Name1</p>
-                        </div>
-                        <div class="picturem">
-                            <img src="bandmember.jpg" alt="Name1">
-                        </div>
-                    </div>
-                    <!-- Name 2 -->
-                    <div class="membername">
-                        <div class="name">
-                            <p>Name2</p>
-                        </div>
-                        <div class="picturem">
-                            <img src="bandmember.jpg" alt="Name1">
-                        </div>
-                    </div>
-                    <!-- Name 3 -->
-                    <div class="membername">
-                        <div class="name">
-                            <p>Name3</p>
-                        </div>
-                        <div class="picturem">
-                            <img src="bandmember.jpg" alt="Name1">
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-footer">
+              <button>close</button>
+              <div class="communicate-footer">
+                need
+                <a href="#home" style="color: #009688">help?</a>
+              </div>
             </div>
-            <div class="tour-section" id="tour">
-                <div class="content">
-                    <h2 class="text-white" id="title-tour">TOUR DATES</h2>
-                    <p class="text-gray" id="title-tour" style= "font-style: italic;">Remember to book your tickets!</p>
-                    <ul class="ticket-list">
-                        <li>
-                            September
-                            <span class="sold-out">
-                                Sold out
-                            </span>
-                        </li>
-                        <li>
-                            October
-                            <span class="sold-out">
-                                Sold out
-                            </span>
-                        </li>
-                        <li>
-                            November
-                            <span class="quant">
-                            3
-                            </span>
-                        </li>
-                    </ul>
-                    <!-- ticket -->
-                    <div class="place-list">
-                        <div class="place-item" id="NY">
-                            <img src="newyork.jpg" alt="" class="pic1">
-                            <div class="place-content">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy">Buy Tickets</a>
-                            </div>
-                        </div>
-                        <div class="place-item">
-                            <img src="paris.jpg" alt="" class="pic1" id="PR">
-                            <div class="place-content" id="PR">
-                                <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy">Buy Tickets</a>
-                            </div>
-                        </div>
-                        <div class="place-item" id="TX">
-                            <img src="sanfran.jpg" alt="" class="pic1">
-                            <div class="place-content">
-                                <h3 class="place-heading">San Francissco</h3>
-                                <p class="place-time">Sun 29 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy">Buy Tickets</a>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="contact">
-                <div class="background_contact">
-                    <h2>CONTACT</h2>
-                    <h3>Fan? Drop a note!</h3>
-                    <div class="contact_info">
-                        <div class="contact">
-                            <i class="fa-solid fa-location-dot" id="sim1"></i>
-                            Chicago, US
-                            <br>
-                            <i class="fa-solid fa-phone"></i>
-                            Phone: +00 151515
-                            <br>
-                            <i class="fa-solid fa-envelope"></i>
-                            Email: mail@mail.com
-                        </div>
-                        <div class="client_info">
-                            <div class="client_res">
-                                <div class="text1">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div>
-                                    <input type="text" placeholder="Email">
-                                </div>
-                            </div>
-                            <input type="text" placeholder="Messenger" class="client_mess">
-                        </div>
-                    </div>
-                    <button>SEND</button>
-                </div>
-            </div>    
-            <img src="map.jpg" alt="">
-            <footer>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-snapchat"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                
-                <p>
-                    Powered by
-                    <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
-                </p>
-            </footer>
+          </div>
         </div>
-        
+      </div>
+      <div class="box">
+        <a href="#home" class="btnbackground">Home</a>
+        <a href="#about" class="btnbackground">Band</a>
+        <a href="#tour" class="btnbackground">Tour</a>
+        <a href="#contact" class="btnbackground">Contact</a>
+        <a href="#" class="btnbackground">More</a>
+        <i class="fa fa-caret-down"></i>
+        <div class="symbol_search">
+          <div class="symbol-wraper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div class="skeleton" id="home">
+        <img src="theband.jpg" alt="/" />
+        <div class="quotes">
+          <h1>Los Angeles</h1>
+          <h2 class="text1">We had the best time playing at Venice beach</h2>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="welovemusic" id="about">
+          <h1 class="Introduce">THE BAND</h1>
+          <h2 class="Introduce2">We love music</h2>
+          <p class="Introduce3">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="band-member">
+            <!--Name 1-->
+            <div class="membername">
+              <div class="name">
+                <p>Name1</p>
+              </div>
+              <div class="picturem">
+                <img src="bandmember.jpg" alt="Name1" />
+              </div>
+            </div>
+            <!-- Name 2 -->
+            <div class="membername">
+              <div class="name">
+                <p>Name2</p>
+              </div>
+              <div class="picturem">
+                <img src="bandmember.jpg" alt="Name1" />
+              </div>
+            </div>
+            <!-- Name 3 -->
+            <div class="membername">
+              <div class="name">
+                <p>Name3</p>
+              </div>
+              <div class="picturem">
+                <img src="bandmember.jpg" alt="Name1" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-section" id="tour">
+          <div class="content">
+            <h2 class="text-white" id="title-tour">TOUR DATES</h2>
+            <p class="text-gray" id="title-tour" style="font-style: italic">
+              Remember to book your tickets!
+            </p>
+            <ul class="ticket-list">
+              <li>
+                September
+                <span class="sold-out"> Sold out </span>
+              </li>
+              <li>
+                October
+                <span class="sold-out"> Sold out </span>
+              </li>
+              <li>
+                November
+                <span class="quant"> 3 </span>
+              </li>
+            </ul>
+            <!-- ticket -->
+            <div class="place-list">
+              <div class="place-item" id="NY">
+                <img src="newyork.jpg" alt="" class="pic1" />
+                <div class="place-content">
+                  <h3 class="place-heading">New York</h3>
+                  <p class="place-time">Fri 27 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="place-buy">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="place-item">
+                <img src="paris.jpg" alt="" class="pic1" id="PR" />
+                <div class="place-content" id="PR">
+                  <h3 class="place-heading">Paris</h3>
+                  <p class="place-time">Sat 28 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="place-buy">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="place-item" id="TX">
+                <img src="sanfran.jpg" alt="" class="pic1" />
+                <div class="place-content">
+                  <h3 class="place-heading">San Francissco</h3>
+                  <p class="place-time">Sun 29 Nov 2016</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="place-buy">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="clear" id="contact"></div>
+            </div>
+          </div>
+        </div>
+        <div id="contact-warper">
+          <div class="background_contact">
+            <h2>CONTACT</h2>
+            <h3>Fan? Drop a note!</h3>
+            <div class="contact_info">
+              <div class="contact">
+                <i class="fa-solid fa-location-dot" id="sim1"></i>
+                Chicago, US
+                <br />
+                <i class="fa-solid fa-phone"></i>
+                Phone: +00 151515
+                <br />
+                <i class="fa-solid fa-envelope"></i>
+                Email: mail@mail.com
+              </div>
+              <div class="client_info">
+                <div class="client_res">
+                  <div class="text1">
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Email" />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Messenger"
+                  class="client_mess"
+                />
+                <button class="send-info">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="map.jpg" alt="" class="footer-img" />
+        <footer>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-snapchat"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+
+          <p>
+            Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+          </p>
+        </footer>
+      </div>
     </div>
-</body>
+    <script src="theband.js"></script>
+  </body>
 </html>

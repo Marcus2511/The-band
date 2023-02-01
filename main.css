@@ -1,379 +1,524 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.text-white{
-    color: #fff !important;
+button{
+  cursor: pointer;
 }
 
-.text-gray{
-    color: #757575 !important;
+.container {
+  overflow: hidden;
 }
 
-.skeleton{
-    width: 100%;
-    height: 690px;
-    background-image: url(theband.jpg);
-
+.text-white {
+  color: #fff !important;
 }
 
-
-.skeleton h1{
-    text-align: center;
-    padding-top: 45%;
-    color: white;
-    font-family: monospace;
-    font-weight: 300;
+.text-gray {
+  color: #757575 !important;
 }
 
-.skeleton h2{
-    text-align: center;
-    color: white;
-    font-size: unset;
-    font-family: -webkit-body;
-    padding-top: 1%;
+.skeleton {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  position: relative;
 }
 
-.clear{
-    clear: both;
+.skeleton img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
-.box{
-    width: 100%;
-    height: 10%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    position: fixed;
+.skeleton .quotes {
+  position: absolute;
+  color: white;
+  z-index: 100;
+  text-align: center;
+  top: 85%;
+  width: 100vw;
+  text-align: center;
 }
 
-.box .symbol_search{
-    color: white;
-    background: black;
-    width: 8%;
-    height: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 63%;
+.skeleton .quotes h2 {
+  font-size: medium;
 }
 
-.box .fa{
-    color: white;
-    margin-left: -18px;
+.clear {
+  clear: both;
 }
 
-.box .symbol_search:hover{
-    background-color: #f44336;
-}
-
-
-.btnbackground{
-    color: white;
-    padding: 20px;
-    font-size: larger;
-    text-decoration: unset;
-}
-
-.btnbackground:hover{
-    color: black;
-    background-color: grey;
-}
-
-.welovemusic{
-    width: 100%;    
-    
-}
-
-.Introduce{
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 1%;
-    letter-spacing: 2px;
-    font-style:initial
-    
-}
-
-.Introduce2{
-    font-size: medium;
-    text-align: center;
-    padding-bottom: 2%;
-    font-style: italic ;
-    color: grey;
-    
-}
-
-.Introduce3{
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: justify;
-    text-justify: inter-word;
-    padding-bottom: 60px;
-    line-height: 1.5;
-}
-
-.band-member{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.picturem img{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20%;
-}
-
-.name{
-    padding-bottom: 20px;
-    padding-left: 40% ;
-}
-
-.name p{
-    font-size: larger;
-}
-
-.tour-section{
-    background-color: #000;
-    
-}
-
-
-.content h2{
-    text-align: center; 
-}
-
-
-.content h2{
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 5.5px;
-    padding-top: 12%;
-    padding-bottom: 3%;
-}
-
-.content #title-tour{
-    text-align: center; 
-}
-
-.content p{
-    font-weight: bold;
-    font-size:large;
-}
-
-.ticket-list{
-    background-color: white;
-    margin-top: 40px;
-    width: 794px;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-    
-}
-
-.ticket-list li{
-    color: #757575;
-    font-size: 15px;
-    padding: 11px 16px ;
-    border-bottom: 1px solid #ddd;
-}
-
-.ticket-list .sold-out{
-    font-size: 17px;
-    background-color: #f44336;
-    color: #fff;
-    padding: 3px 4px;
-    margin-left: 16px;
-}
-.ticket-list .quant{
-    float: right;
-    width: 24px;
-    height: 24px;
-    background-color: #000;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 24px;
-    color: #fff;
-    margin-top: -2px;
-}
-
-.place-list{
-    margin-top: 32px;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.place-item{
-    float: left;
-    width: 33.3333333%;
-    padding: 0px 8px;
-}
-
-.place-item .pic1{
-    width: 100%;
-    display: block;
+.box {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
 }
 
-.place-item p{
-    font-weight: unset;
+.box .symbol_search {
+  color: white;
+  background: black;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
-.place-content h3{
-    font-size: large;
+.symbol-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
 }
 
-#NY{
-    margin-left: -8px;
+.box .fa {
+  color: white;
+  margin-left: -18px;
 }
 
-#TX{
-    margin-left: 8px;
+.symbol-wraper:hover {
+  background-color: #f44336;
 }
 
-.place-item .pic1:hover{
-    opacity: 0.6;
+.btnbackground {
+  color: white;
+  padding: 20px;
+  font-size: larger;
+  text-decoration: unset;
 }
 
-.place-content{
-    background-color: #ffff;
-    padding: 16px;
-    font-size: 15px;
+.btnbackground:hover {
+  color: black;
+  background-color: grey;
 }
 
-.place-heading{
-    font-size: 15px;
-    font-weight: 600;
+.welovemusic {
+  width: 100%;
 }
 
-.place-time{
-    margin-top: 8%;
-    color: #757575;
+.Introduce {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 1%;
+  letter-spacing: 2px;
+  font-style: initial;
 }
 
-.place-desc{
-    margin-top: 8%;
-    line-height: 1.6;
-    padding-bottom: 15%;
+.Introduce2 {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 2%;
+  font-style: italic;
+  color: grey;
 }
 
-.place-buy{
-    padding: 11px 13px ;
-    background: #000;
-    color: white;
-    text-decoration: unset;
+.Introduce3 {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 60px;
+  line-height: 1.5;
 }
 
-.place-buy:hover{
-    background: #757575;
-    color: black;
+.band-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.tour-section{
-    padding-bottom: 8%;
+.picturem img {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20%;
 }
 
-.background_contact{
-    width: 100vw;
-    height: 460px;
+.name {
+  padding-bottom: 20px;
+  padding-left: 40%;
 }
 
-.background_contact h2{
-    text-align: center;
-    margin-top: 90px;
+.name p {
+  font-size: larger;
 }
 
-.background_contact h3{
-    text-align: center;
-    margin-top: 35px;
-    font-weight: normal;
-    font-style: italic;
-    color: #757575;
-    padding-bottom: 55px;
+.tour-section {
+  background-color: #000;
 }
 
-.contact_info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.content h2 {
+  text-align: center;
 }
 
-.contact_info .client_info{
-    padding-left: 148px;
-
+.content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 5.5px;
+  padding-top: 12%;
+  padding-bottom: 3%;
 }
 
-.contact i{
-    padding-right: 15px;
-    padding-bottom: 10px;
-
+.content #title-tour {
+  text-align: center;
 }
 
-#sim1{
-    padding-right: 19px;
+.content p {
+  font-weight: bold;
+  font-size: large;
 }
 
-.client_res{
-    display: flex;
-    padding-bottom: 8px;
+.ticket-list {
+  background-color: white;
+  margin-top: 40px;
+  width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
 }
 
-.client_res input{
-    height: 40px;
-    width: 183px;
-    padding-left: 8px;
+.ticket-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
 }
 
-.client_info .client_mess{
-    width: 383px;
-    height: 40px;
-    padding-left: 8px;
+.ticket-list .sold-out {
+  font-size: 17px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+.ticket-list .quant {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  margin-top: -2px;
 }
 
-.client_res .text1{
-    padding-right: 16px;
+.place-list {
+  margin-top: 32px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.background_contact button{
-    margin-top: 16px;
-    margin-left: 940px;
-    width: 71px;
-    height: 38px;
-    background-color: #000;
-    color: white;
-    border: none;
+.place-item {
+  float: left;
+  width: 33.3333333%;
+  padding: 0px 8px;
 }
 
-.background_contact button:hover{
-    background-color: grey;
-    color: #000;
+.place-item .pic1 {
+  width: 100%;
+  display: block;
 }
 
-footer{
-    height: 215px;
-    text-align: center;
-    margin-top: 70px;
+.place-item p {
+  font-weight: unset;
 }
 
-footer i{
-    font-size: 20px;
-    letter-spacing: 3px;
-    padding-bottom: 30px;
+.place-content h3 {
+  font-size: large;
 }
 
-footer p{
-    font-size: large;
-    color: #757575;
+#NY {
+  margin-left: -8px;
 }
 
-footer a{
-    font-size: large;
-    color: #757575;
+#TX {
+  margin-left: 8px;
+}
+
+.place-item .pic1:hover {
+  opacity: 0.6;
+}
+
+.place-content {
+  background-color: #ffff;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.place-time {
+  margin-top: 8%;
+  color: #757575;
+}
+
+.place-desc {
+  margin-top: 8%;
+  line-height: 1.6;
+  padding-bottom: 15%;
+}
+
+.place-buy {
+  padding: 11px 13px;
+  background: #000;
+  color: white;
+  text-decoration: unset;
+}
+
+.place-buy:hover {
+  background: #757575;
+  color: black;
+}
+
+.tour-section {
+  padding-bottom: 8%;
+}
+
+.contact-warper {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.background_contact {
+  width: 100vw;
+  height: 560px;
+  position: relative;
+}
+
+.background_contact h2 {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.background_contact h3 {
+  text-align: center;
+  margin-top: 35px;
+  font-weight: normal;
+  font-style: italic;
+  color: #757575;
+  padding-bottom: 55px;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_info .client_info {
+  padding-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact i {
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+#sim1 {
+  padding-right: 19px;
+}
+
+.client_res {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.client_res input {
+  height: 40px;
+  width: 183px;
+  padding-left: 8px;
+}
+
+.client_info .client_mess {
+  width: 383px;
+  height: 40px;
+  padding-left: 8px;
+}
+
+.client_res .text1 {
+  padding-right: 16px;
+}
+
+.background_contact button {
+  width: 71px;
+  height: 38px;
+  background-color: #000;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+}
+
+.background_contact button:hover {
+  background-color: grey;
+  color: #000;
+}
+
+.footer-img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  height: 215px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+footer i {
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-size: large;
+  color: #757575;
+}
+
+footer a {
+  font-size: large;
+  color: #757575;
+}
+
+.overlays {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 101;
+}
+
+.hide {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  width: 57rem;
+  height: auto;
+  background: white;
+  top: 10%;
+  left: 15%;
+  transition: 2s;
+  animation: modalshow .4s linear;
+}
+
+
+.modal-header i{
+  margin-right: 1rem;
+}
+
+.modal-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #009688 !important;
+  color: white;
+}
+
+.modal-body {
+  width: 100%;
+  height: 100%;
+}
+
+.sold-ticket {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sold-ticket p {
+  padding: 1.25rem 0;
+  font-size: large;
+}
+
+.sold-ticket input {
+  padding: 0.75rem 1rem;
+  font-size: large;
+}
+
+.sold-ticket i{
+  margin-right: .5rem ;
+}
+
+.sold-ticket button {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-size: large;
+  color: white;
+  background-color: #009688 !important;
+  border: none;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modal-footer button {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: white;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-footer button:hover {
+  background-color: gray;
+}
+
+.communicate-footer a {
+  text-decoration: underline;
+}
+
+.fa-x{
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  color: white;
+  z-index: 200;
+  font-size: small;
+  cursor: pointer;
+}
+
+@keyframes modalshow{
+  from{
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
